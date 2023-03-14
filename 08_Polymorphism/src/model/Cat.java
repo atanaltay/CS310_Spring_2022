@@ -1,0 +1,61 @@
+package model;
+
+public class Cat extends Animal{
+	
+	private String catType;
+
+
+	//Overloading
+	public void makeSound(String sound) {
+		System.out.println(sound);
+	}
+	
+	
+	@Override
+	public void feedAnimal() {
+		System.out.println("Cat is fed....");
+	}
+	
+	//Overriding
+	@Override
+	public void makeSound() {
+		System.out.println("Miyaoooewww");
+	}
+	
+	
+	
+	public void jump() {
+		
+	}
+	
+	
+	public Cat(String furColor, String habitat, String catType) {
+		super(furColor, habitat);
+		System.out.println("Cat constructor");
+		this.catType = catType;
+	}
+
+
+	public void getInfo() {
+		System.out.println("Cat:" + catType);
+		
+		super.getInfo();
+			
+	
+	}
+	
+	
+	public String getCatType() {
+		return catType;
+	}
+
+	public void setCatType(String catType) {
+		this.catType = catType;
+	}
+	
+	
+	
+	
+	
+
+}
