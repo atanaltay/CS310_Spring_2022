@@ -12,5 +12,8 @@ public interface ProductRepo extends MongoRepository<Product, String>{
 	public List<Product> findByName(String name);
 	
 	public List<Product> findBySupplier(Supplier sup);
+	
+	
+	public List<Product> findByNameOrderByPriceDesc(String name);
 
 }

@@ -30,6 +30,11 @@ public class Address {
 	public void setPostno(String postno) {
 		this.postno = postno;
 	}
+
+	@Override
+	public String toString() {
+		return "Address [city=" + city + ", postno=" + postno + "]";
+	}
 	
 	
 	
